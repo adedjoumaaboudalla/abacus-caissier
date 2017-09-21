@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_commande_client"
+        android:icon="@mipmap/commandeclient"
+        android:title="@string/menu_commande_client" />
+
+    <item
+        android:id="@+id/menu_commande_fournisseur"
+        android:icon="@mipmap/commandefornisseur"
+        android:title="@string/menu_commande_fournisseur" />
+</menu>

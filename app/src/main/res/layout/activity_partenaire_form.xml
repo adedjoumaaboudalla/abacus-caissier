@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme"
+    android:id="@+id/drLayout"
+    tools:context="pv.projects.mediasoft.com.pventes.activities.PartenaireFormActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme = "@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme = "@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v7.widget.CardView
+        android:padding="5dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/racine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:background="@color/my_primary"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_marginBottom="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitXY"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/cam"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_cam"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:id="@+id/sexegroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/pm"
+                            android:checked="true"
+                            android:text="@string/pm"
+                            android:layout_width="0dp"
+                            android:layout_weight="40"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/m"
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:layout_height="wrap_content"
+                            android:text="@string/masculin" />
+
+                        <RadioButton
+                            android:id="@+id/f"
+                            android:text="@string/feminin"
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/raisonsocial"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/raisonsocial"/>
+
+                        <EditText
+                            android:id="@+id/nom"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/nom"/>
+
+                        <EditText
+                            android:id="@+id/prenom"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/prenom"/>
+
+                        <EditText
+                            android:id="@+id/contact"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/contact"/>
+
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/eamil"/>
+
+                        <EditText
+                            android:id="@+id/adresse"
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:hint="@string/adressee"/>
+
+
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/typegroup"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/clt"
+                            android:checked="true"
+                            android:text="@string/clt"
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/frs"
+                            android:text="@string/frs"
+                            android:layout_width="0dp"
+                            android:layout_weight="40"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/fin"
+                            android:text="@string/fin"
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/valider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/my_primary"
+                    android:textColor="@color/my_secondary_text"
+                    android:text="@string/btn_valid"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

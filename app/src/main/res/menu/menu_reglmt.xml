@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_creancepayement"
+        android:icon="@mipmap/creditreglement"
+        android:title="@string/menu_payement" />
+
+    <item
+        android:id="@+id/menu_empruntpayement"
+        android:icon="@mipmap/menu_emprunt"
+        android:title="@string/menu_empruntpayement" />
+
+    <item
+        android:id="@+id/menu_dettepayement"
+        android:icon="@mipmap/creditreglement"
+        android:title="@string/menu_creance" />
+</menu>

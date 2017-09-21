@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pv.projects.mediasoft.com.pventes.activities.ImmoFormActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme = "@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme = "@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v7.widget.CardView
+        android:padding="5dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/racine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/spinner_border1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </Spinner>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="@string/mte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/mte1"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="80"
+                            android:layout_height="match_parent"
+                            android:hint="@string/mte"/>
+
+                        <Button
+                            android:id="@+id/btnvente"
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:textColor="@color/my_secondary_text"
+                            android:textSize="14dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/my_primary"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/description"
+                            android:inputType="text"
+                            android:maxLines="10"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_marginTop= "10dp"
+                            android:layout_marginBottom="10dp"
+                            android:minHeight="200dp"
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/description"/>
+
+                    </LinearLayout>
+
+
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:id="@+id/modegroup"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/espece"
+                            android:checked="true"
+                            android:text="@string/espece"
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/cheque"
+                            android:layout_width="0dp"
+                            android:layout_weight="30"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cheque" />
+
+                        <RadioButton
+                            android:id="@+id/cartebanque"
+                            android:text="@string/cartebancaire"
+                            android:layout_width="0dp"
+                            android:layout_weight="40"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/spinner_border1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/banque"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </Spinner>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lignecheque"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/numcheque"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/numcheque"
+                            android:layout_marginTop="5dp"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:background="@drawable/edit_text_background"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/valider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/my_primary"
+                    android:textColor="@color/my_secondary_text"
+                    android:text="@string/btn_valid"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

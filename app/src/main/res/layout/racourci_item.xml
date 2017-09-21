@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gris_leger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:src="@mipmap/ic_produit"
+                android:layout_height="50dp"/>
+
+
+            <TextView
+                android:id="@+id/codeTV"
+                android:layout_below="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0025"
+                android:visibility="gone"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/libelleTV"
+                android:layout_below="@+id/codeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Libelle"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/prixVTV"
+                android:layout_below="@id/libelleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="200f"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/nbre"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="50"
+                android:textColor="@color/my_secondary_text"
+                android:background="@drawable/bord_rond"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

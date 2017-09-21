@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/my_secondary_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/value"
+            android:padding="5dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="numberDecimal"
+            android:hint="@string/montantt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/cours_moyen"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/cours"
+                android:text="0"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/totaux"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="0dp"
+                android:text="@string/annuler"
+                android:textColor="@color/my_secondary_text"
+                android:background="@color/state0"
+                android:layout_weight="40"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="0dp"
+                android:text="@string/valider"
+                android:textColor="@color/my_secondary_text"
+                android:background="@color/state2"
+                android:layout_weight="40"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

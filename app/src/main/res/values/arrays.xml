@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="papier_fr">
+        <item>@string/grand</item>
+        <item>@string/petit</item>
+    </array>
+
+    <array name="papier_value">
+        <item>@string/grand</item>
+        <item>@string/petit</item>
+    </array>
+
+</resources>

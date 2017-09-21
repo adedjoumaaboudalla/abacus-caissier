@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/last"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/recu"
+                android:inputType="number"
+                android:text=""
+                android:lines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:layout_height="match_parent"
+                android:hint="@string/mtnrecu"/>
+
+            <Button
+                android:id="@+id/money1"
+                android:layout_width="0dp"
+                android:layout_weight="15"
+                android:layout_height="match_parent"
+                android:background="@color/my_primary"
+                android:src="@mipmap/ic_money"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_below="@+id/last"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="60"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/netapayer"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_weight="40"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/net"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="#5c5"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/save"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/second"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#fff">
+
+            <EditText
+                android:id="@+id/remise"
+                android:inputType="number"
+                android:text=""
+                android:lines="1"
+                android:visibility="gone"
+                android:background="@drawable/edit_text_background"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent"
+                android:hint="@string/remise_input"/>
+
+            <TextView
+                android:layout_weight="60"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="A rendre:"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_weight="40"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rendre"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="#5c5"
+                android:textSize="18sp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dernier"
+            android:layout_below="@+id/save"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#fff">
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:text="@string/partenaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/client"
+                android:inputType="text"
+                android:text="COMPTANT"
+                android:lines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/partenaire"/>
+
+
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/modegroup"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/espece"
+                    android:checked="true"
+                    android:text="@string/espece"
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/cheque"
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cheque" />
+
+                <RadioButton
+                    android:id="@+id/cartebanque"
+                    android:text="@string/cartebancaire"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spinner_border1"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/banque"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </Spinner>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/lignecheque"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/numcheque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/numcheque"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/annuler"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="40"
+                    android:gravity="center"
+                    android:background="@color/state0"
+                    android:textColor="@color/my_secondary_text"
+                    android:text="@string/annuler"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    />
+
+                <Button
+                    android:id="@+id/valider"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="40"
+                    android:gravity="center"
+                    android:background="@color/state2"
+                    android:textColor="@color/my_secondary_text"
+                    android:text="@string/valid"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/devise"
+                android:layout_width="match_parent"
+                android:layout_weight="15"
+                android:layout_marginRight="5dp"
+                android:layout_height="40dp"
+                android:text="@string/autresdevise"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/my_secondary_text"
+                android:background="@color/my_primary"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

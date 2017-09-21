@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@color/my_secondary_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/prixTotalTV"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:text="Prix : 100000f"/>
+
+
+                <TextView
+                    android:id="@+id/remiseTV"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:text="Remise : 100000f"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/recuTV"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:text="Prix : 100000f"/>
+
+
+                <TextView
+                    android:id="@+id/renduTV"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:text="Remise : 100000f"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/mode"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:text=""/>
+
+
+                <TextView
+                    android:id="@+id/banque"
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/table"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="35"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp"
+                        android:text="Produit"/>
+
+
+                    <TextView
+                        android:layout_weight="25"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/prix"/>
+
+                    <TextView
+                        android:layout_weight="15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Qte"/>
+
+                    <TextView
+                        android:layout_weight="24"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Total"/>
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <ListView
+                    android:layout_margin="5dp"
+                    android:id="@+id/listeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </ListView>
+
+                <TextView
+                    android:id="@+id/dateVente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/client"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/annuler"
+                    android:src="@mipmap/ic_annuler"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="50dp" />
+                <ImageButton
+                    android:id="@+id/livre"
+                    android:src="@mipmap/ic_livre"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imp"
+                android:src="@mipmap/ic_impri"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/fermer"
+                android:text="@string/fermer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

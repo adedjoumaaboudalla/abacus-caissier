@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="pv.projects.mediasoft.com.pventes.activities.CompteBanqueFormActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme = "@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme = "@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v7.widget.CardView
+        android:padding="5dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/racine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:background="@color/my_primary"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_marginBottom="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitXY"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/cam"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_cam"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/nocompte"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nocompte"/>
+
+                    <EditText
+                        android:id="@+id/banque"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/banque"/>
+
+                    <CheckBox
+                        android:id="@+id/cheque"
+                        android:text="@string/compte_de_d_pot_de_cheque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/cartebanque"
+                        android:text="@string/compte_de_reception_bancaire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/valider"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/my_primary"
+                    android:textColor="@color/my_secondary_text"
+                    android:text="@string/btn_valid"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

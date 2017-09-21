@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/password"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:layout_marginRight="25dp"
+                android:background="@color/state0"
+                android:textColor="@color/my_secondary_text"
+                android:text="@string/annuler"
+                />
+
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:layout_marginLeft="25dp"
+                android:background="@color/state2"
+                android:textColor="@color/my_secondary_text"
+                android:text="@string/valider"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

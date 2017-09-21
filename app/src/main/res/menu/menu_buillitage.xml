@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="projects.mediasoft.com.pointvente.activities.BuillitageActivity">
+
+    <item
+        android:id="@+id/action_valid"
+        android:title="valider"
+        android:icon="@mipmap/ic_calcul"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drLayout"
+    tools:context="pv.projects.mediasoft.com.pventes.activities.ConnexionActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="0dp"
+                android:src="@drawable/logos"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/my_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/app_name"/>
+
+
+                <EditText
+                    android:id="@+id/login"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/login"/>
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/password"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/annuler"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:layout_marginRight="25dp"
+                        android:background="@color/my_selected"
+                        android:textColor="@color/my_secondary_text"
+                        android:text="@string/quiter"
+                        />
+
+                    <Button
+                        android:id="@+id/valider"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:layout_marginLeft="25dp"
+                        android:background="@color/my_selected"
+                        android:textColor="@color/my_secondary_text"
+                        android:text="@string/valider"
+                        />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/inscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/my_selected"
+                    android:textColor="@color/my_secondary_text"
+                    android:text="@string/inscription"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

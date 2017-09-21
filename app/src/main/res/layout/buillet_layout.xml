@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/money"
+        android:text="@string/azero"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@color/money"
+            android:text="@string/close"/>
+        <Button
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@color/money"
+            android:text="0"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@id/init"
+        android:layout_above="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/dimille"
+                android:clickable="true"
+                android:background="@drawable/money_selected"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dixmille"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/cinqmille"
+                android:clickable="true"
+                android:background="@drawable/money_selected"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cinqmille"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/deuxmille"
+                android:clickable="true"
+                android:background="@drawable/money_selected"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/deuxmille"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/mille"
+                android:clickable="true"
+                android:background="@drawable/money_selected"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mille"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/cinqcent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cinqcent"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/deuxcentcinquante"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/deuxcentcinquante"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/deuxcent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/deuxcent"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/cent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cent"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/cinquante"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cinquante"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:id="@+id/vingcinq"
+                android:clickable="true"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vingtcinq"/>
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="50"
+                    android:visibility="gone"
+                    android:textColor="@color/my_secondary_text"
+                    android:background="@drawable/bord_rond"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

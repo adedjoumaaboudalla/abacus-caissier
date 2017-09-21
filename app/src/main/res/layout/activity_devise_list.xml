@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drLayout"
+    tools:context="pv.projects.mediasoft.com.pventes.activities.DeviseListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme = "@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme = "@style/ThemeOverlay.AppCompat.Light"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/vide"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@color/my_error"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:textColor="@color/gris_foncer"
+                android:gravity="center"
+                android:text="@string/anyresult" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_above="@+id/totaux"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/totaux"
+            android:layout_above="@+id/last"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/totaux"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/last"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="0dp"
+                android:text="@string/annuler"
+                android:textColor="@color/my_secondary_text"
+                android:background="@color/state0"
+                android:layout_weight="40"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="0dp"
+                android:text="@string/valider"
+                android:textColor="@color/my_secondary_text"
+                android:background="@color/state2"
+                android:layout_weight="40"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

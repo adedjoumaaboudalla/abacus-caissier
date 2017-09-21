@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="window_background">#dddddd</color>
+    <color name="window_backgroundold">#c9e7f1</color>
+
+    <color name="my_primary">#186FAB</color>
+    <color name="my_primary_dark">#186FAB</color>
+    <color name="my_primary_light">#c9e7f1</color>
+    <color name="my_accent">#186FAB</color>
+    <color name="my_primary_text">#555555</color>
+    <color name="my_secondary_text">#ffffff</color>
+    <color name="my_third_text">#DD2C00</color>
+    <color name="my_icons">#000000</color>
+    <color name="my_selected">#186FAB</color>
+    <color name="mysplash">#461fb957</color>
+    <color name="my_divider">#B6B6B6</color>
+    <color name="my_error">#EEEEEE</color>
+
+    <color name="my_new_msg">#32fa8151</color>
+
+    <color name="my_card">#FFD600</color>
+    <color name="tab_indicator">#FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gris_leger">#2c000000</color>
+    <color name="gris_foncer">#66000000</color>
+
+    <color name="list_item_selected">#461fb957</color>
+
+    <color name="state0">#a2b71c1c</color>
+    <color name="state1">#da8b3c</color>
+    <color name="state2">#a4159e2e</color>
+    <color name="designcolor">#333333</color>
+
+
+
+
+
+
+    <color name="money">#75039be5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+
+
+
+
+    <color name="normal_start">#186FAB</color>
+    <color name="normal_end">#145d8f</color>
+    <color name="normal_border">#186FAB</color>
+    <color name="normal_text">#FFFFFF</color>
+
+    <color name="pressed_start">#145d8f</color>
+    <color name="pressed_end">#1f8cd7</color>
+    <color name="pressed_border">#145d8f</color>
+    <color name="pressed_text">#FFFFFF</color>
+
+    <color name="focused_start">#145d8f</color>
+    <color name="focused_end">#186FAB</color>
+    <color name="focused_border">#145d8f</color>
+    <color name="focused_text">#FFFFFF</color>
+
+    <color name="disabled_start">#aed3ec</color>
+    <color name="disabled_end">#83bee7</color>
+    <color name="disabled_border">#8dbdde</color>
+    <color name="disabled_text">#1f8cd7</color>
+
+    <color name="disabled_and_focused_start">#186FAB</color>
+    <color name="disabled_and_focused_end">#145d8f</color>
+    <color name="disabled_and_focused_border">#186FAB</color>
+    <color name="disabled_and_focused_text">#FFFFFF</color>
+</resources>

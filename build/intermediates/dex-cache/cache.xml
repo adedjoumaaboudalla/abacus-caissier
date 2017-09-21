@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\dermalogcommon.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47d603d9b857866ac4e990c3423b3ce42461c752">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\dermalogcommon_20296adab2ae1afbb34af03c83f9915bbb8c77c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\bw_odm_kk8x12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3fccc07b000da2d419ec6d37e3b5797a73d3c92e">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\bw_odm_kk8x12_8c1a3151f20110d32c559beb6666be62f53f5d44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\424c3c5eb04a69190d96b1ee0f3b678ca4d90243\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="541a2ad68dc68aa49795821f8280b7624e6a0c9b">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_9e5d354ecbf144e953a825d1bb11ff56e11d366c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\core.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7fafee7aa303b3fd5f5a7d24246b0c449715fa">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\core_e32d81b79634fa58f864622cc94dc6d5d681f07b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\578f4029deb8fc4b5abf9c3ae4e22e20667ee0da\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_d9e2d3395e973e6c5fedbd61e086358da463c121.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\dermalogembeddedbiometrics.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c75286ff102a5596e8338c6bb1ed1e985f958730">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\dermalogembeddedbiometrics_6bed4abfe5e8de9b47d0005df23e1531e5b191d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\btsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f6b84f6fbcfbf895952b8e0c007ec5d0fce9bc9">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\btsdk_6cafcac892c199ebbf06456d2737a0e8a9493f65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\com.nbbse.mobiprint3-v0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c05993a31da3dc398df4d3409df38665b8845d4">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\com.nbbse.mobiprint3-v0.4_4debaf7cbe4ce5286b5b93b96940c98a5430fe68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\J1014.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="183cdffa762fe2cfe87e047bbc96bd6b75ef4846">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\J1014_33abce8d8e2555789aee205bdb32676749a90c59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.gradle\caches\modules-2\files-2.1\net.sourceforge.jexcelapi\jxl\2.6.12\7faf62e0697f7a88954622dfe8c8de33ed142ac7\jxl-2.6.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7faf62e0697f7a88954622dfe8c8de33ed142ac7">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\jxl-2.6.12_9afd2d5625a8a8e14e0e163ed1d7e2b0fbc9d5b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.8.1\4d060ca3190df0eda4dc13415532a12e15ca5f11\okhttp-3.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4d060ca3190df0eda4dc13415532a12e15ca5f11">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\okhttp-3.8.1_2f70e541a5f1d41b12bae1ae114e42fc74df5338.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.gradle\caches\modules-2\files-2.1\com.itextpdf\itextg\5.5.9\3580383b2c7db8fa2fee1ffbe1993017a9ea296e\itextg-5.5.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3580383b2c7db8fa2fee1ffbe1993017a9ea296e">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\itextg-5.5.9_52fb73407f48c56bdebed9800a32781f1d3a09fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\096001e7b51925dbc48a6b6cf07db92152b08ce9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_20b115a368b081c27101e1fecb562288cbabede1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\dermalogimageio.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5547c9cce84edefa1a64c73631b46f2b925b6e74">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\dermalogimageio_47c7e91fcfa223b3fc1381eb81305e581630e718.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.6\b036abbb61656165da99cf44898e4b9123687e65\MPAndroidChart-v2.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b036abbb61656165da99cf44898e4b9123687e65">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.1.6_42c5e7ee92e7a38e422ee4a8d4b0a80e2512d85b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\btsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f6b84f6fbcfbf895952b8e0c007ec5d0fce9bc9">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\btsdk_6cafcac892c199ebbf06456d2737a0e8a9493f65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\fgtitdevice.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7f24dbf6a978754bf760fd82ea42428d1381bce">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\fgtitdevice_5566be5b914f37cd60a6d5a093d071acfdeb2c63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\578f4029deb8fc4b5abf9c3ae4e22e20667ee0da\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_11f68f3b0a1987091890aca61ff8cc96c63fb327.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\bw_odm_kk8x12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3fccc07b000da2d419ec6d37e3b5797a73d3c92e">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\bw_odm_kk8x12_8c1a3151f20110d32c559beb6666be62f53f5d44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\picasso-2.5.0_90d46e25c03e8479cc55681d712bb7564b137885.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\7e1f5cd05a9a9a705332f5d55af814a1544456ec\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_b4d424e5df7e88236dbb2575e8e12ee0b31efddc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\achartengine-1.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0_2d82379ac087f45d0a8e3b4c526a981caf28e289.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\ff559c04672d826d0a5d710e052092c3fa4e5b32\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_e249e3f6ab6d499d6f84a6d73bfdea7b1166a3c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\d9134d21842828311b257aac531b4ac6d4895504\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="760ff0a866a9b3b7fe4a91cfe6439d9dc93cea7c">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_a6d232dbe3b732cce39bb53586e6699a77ba81fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\dermalogembeddedbiometrics.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c75286ff102a5596e8338c6bb1ed1e985f958730">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\dermalogembeddedbiometrics_6bed4abfe5e8de9b47d0005df23e1531e5b191d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\dermalogcommon.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47d603d9b857866ac4e990c3423b3ce42461c752">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\dermalogcommon_20296adab2ae1afbb34af03c83f9915bbb8c77c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\core.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7fafee7aa303b3fd5f5a7d24246b0c449715fa">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\core_e32d81b79634fa58f864622cc94dc6d5d681f07b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\J1014.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="183cdffa762fe2cfe87e047bbc96bd6b75ef4846">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\J1014_33abce8d8e2555789aee205bdb32676749a90c59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\com.nbbse.mobiprint3-v0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c05993a31da3dc398df4d3409df38665b8845d4">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\com.nbbse.mobiprint3-v0.4_4debaf7cbe4ce5286b5b93b96940c98a5430fe68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\okio-1.13.0_610beea43ff3cdacebd62516220fd5e790a22544.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\6ab5fd39ab51548ca3dffe11c61a43a109c0f5d9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_a8b343cb03c6748869df280ad0be42b3c33c4848.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_20a961987c9e6efa519e13640026a4ed48d46ab2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\fgtitdevice.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7f24dbf6a978754bf760fd82ea42428d1381bce">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\fgtitdevice_5566be5b914f37cd60a6d5a093d071acfdeb2c63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\3502a0a46da9f6af5b963c629fecbd69a4d506e4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_7e1b591c6d7f12a1122459db8487843a2029a37e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\dermalogimageio.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5547c9cce84edefa1a64c73631b46f2b925b6e74">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\dermalogimageio_47c7e91fcfa223b3fc1381eb81305e581630e718.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha7\constraint-layout-solver-1.0.0-alpha7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="439eeb5ffd54cbd18db0a6aea471e8356f19fc36">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-alpha7_1ab53657b9919c5b61bb55ca9d77001624d81637.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Projets\Abacus\Abacus_caissier\app\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0_2d82379ac087f45d0a8e3b4c526a981caf28e289.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.gradle\caches\modules-2\files-2.1\log4j\log4j\1.2.14\3b254c872b95141751f414e353a25c2ac261b51\log4j-1.2.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03b254c872b95141751f414e353a25c2ac261b51">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\log4j-1.2.14_5a305f6591a667f29a8d28793a17c781d47ee2fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\ea2d412747f0b9b49e9f0754834478163f77725a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ceda0650ec225b9c0143ed8ff1c010d4e621a423">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_62161b51dd7988ff8b225a3b94ef1457f4cb7869.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mediasoft\.android\build-cache\3333ec6d0c7ec13c8e8e4e3b2c90c5166b841ea7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\Projets\Abacus\Abacus_caissier\app\build\intermediates\pre-dexed\debug\classes_5800bd70f7e6c387c3956d9c830783e8ce95069e.jar" />
+    </item>
+
+</items>

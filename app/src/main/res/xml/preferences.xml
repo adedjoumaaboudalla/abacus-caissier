@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/generale" >
+
+
+        <EditTextPreference
+            android:key="societeNom"
+            android:icon="@mipmap/ic_house"
+            android:dialogTitle="@string/societetitle"
+            android:title="@string/societetitle"
+            android:summary="@string/societedesc"
+            />
+
+        <EditTextPreference
+            android:key="ipserver"
+            android:icon="@mipmap/ic_msgfinal"
+            android:dialogTitle="@string/ipserver"
+            android:title="@string/ipserver"
+            android:summary="@string/ipserversumary"
+            />
+
+
+        <CheckBoxPreference
+            android:key="stateonoff"
+            android:icon="@mipmap/ic_parametres"
+            android:title="@string/caisseonoff"
+            android:summaryOn="@string/online"
+            android:summaryOff="@string/offline"
+            android:defaultValue="false"
+            />
+
+
+
+        <CheckBoxPreference
+            android:key="commercial"
+            android:icon="@mipmap/ic_parametres"
+            android:title="@string/commerciale"
+            android:summaryOn="@string/commercialon"
+            android:summaryOff="@string/commercialoff"
+            android:defaultValue="false"
+            />
+
+
+        <CheckBoxPreference
+            android:key="communication"
+            android:icon="@mipmap/ic_communication"
+            android:title="@string/communication"
+            android:summaryOn="@string/communicationon"
+            android:summaryOff="@string/communicationoff"
+            android:defaultValue="false"
+            />
+
+
+        <!--
+        <CheckBoxPreference
+            android:key="membre"
+            android:icon="@mipmap/ic_membre"
+            android:title="@string/membre"
+            android:summaryOff="@string/membreoff"
+            android:summaryOn="@string/membreon"
+            android:defaultValue="true"
+            />
+            !-->
+
+
+                <CheckBoxPreference
+                    android:key="imprimenteexterne"
+                    android:icon="@mipmap/ic_diffusuion"
+                    android:title="@string/impconfig"
+                    android:summaryOn="@string/impext"
+                    android:summaryOff="@string/impint"
+                    android:defaultValue="true"
+                    />
+
+        <EditTextPreference
+            android:dependency="imprimenteexterne"
+            android:dialogTitle="Nom de l'imprimente"
+            android:icon="@mipmap/ic_diffusuion"
+            android:key="bluetoothConfig"
+            android:summary="@string/imprsum"
+            android:title="Imprimante" />
+
+
+        <ListPreference
+            android:key="papier"
+            android:icon="@mipmap/ic_msgfinal"
+            android:dialogTitle="@string/papier"
+            android:entries="@array/papier_fr"
+            android:defaultValue="@string/petit"
+            android:negativeButtonText="@string/fermer"
+            android:entryValues="@array/papier_value"
+            android:summary="@string/papiersum"
+            android:title="@string/papier" />
+
+                <EditTextPreference
+                    android:key="messagefinal"
+                    android:icon="@mipmap/ic_msgfinal"
+                    android:dialogTitle="@string/lastmsg"
+                    android:title="@string/lastmsg"
+                    android:summary="@string/msgbottomticket"
+                    />
+
+            </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/security" >
+
+        <CheckBoxPreference
+            android:key="abacusverrouiller"
+            android:icon="@mipmap/ic_verrou"
+            android:title="@string/verrouiller"
+            android:summaryOff="@string/offverrouiller"
+            android:summaryOn="@string/onverrouiller"
+            android:defaultValue="false"
+            />
+
+
+        <EditTextPreference
+            android:key="password"
+            android:icon="@mipmap/ic_security"
+            android:dependency="abacusverrouiller"
+            android:dialogTitle="@string/password"
+            android:title="@string/password"
+            android:summary="@string/passwordsummary"
+            />
+
+        <EditTextPreference
+            android:key="indicateur"
+            android:dependency="abacusverrouiller"
+            android:icon="@mipmap/ic_info"
+            android:dialogTitle="@string/indicateur"
+            android:title="@string/indicateur"
+            android:summary="@string/indicsummary"
+            />
+
+
+        <EditTextPreference
+            android:key="mail"
+            android:dependency="abacusverrouiller"
+            android:icon="@mipmap/ic_mail"
+            android:dialogTitle="@string/mail"
+            android:title="@string/mail"
+            android:summary="@string/mailsummary"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

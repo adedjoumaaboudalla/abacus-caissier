@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_achat"
+            android:icon="@mipmap/approvisionnement"
+            android:title="@string/menu_achat" />
+        <item
+            android:id="@+id/menu_depense"
+            android:icon="@mipmap/depense"
+            android:title="@string/menu_depense" />
+        <item
+            android:id="@+id/menu_divers"
+            android:icon="@mipmap/entreesortiedivers"
+            android:title="@string/menu_divers" />
+
+        <item
+            android:id="@+id/menu_banquetransaction"
+            android:icon="@mipmap/banquecaisse"
+            android:title="@string/menu_banquetransaction" />
+
+        <item
+            android:id="@+id/commande"
+            android:icon="@mipmap/commandeclient"
+            android:title="@string/commandee"
+            />
+
+        <item
+            android:id="@+id/stock"
+            android:title="@string/mouvementstock"
+            android:icon="@mipmap/approvisionnement"
+            />
+
+        <item
+            android:id="@+id/menu_placement"
+            android:icon="@mipmap/menu_placement"
+            android:title="@string/menu_placement" />
+
+        <item
+            android:id="@+id/menu_dettebanque"
+            android:icon="@mipmap/menu_emprunt"
+            android:title="@string/menu_dettebanque" />
+
+        <item
+            android:id="@+id/menu_immo"
+            android:icon="@mipmap/menu_immo"
+            android:title="@string/menu_immo" />
+
+        <item
+            android:id="@+id/menu_rglmt"
+            android:title="@string/reglements"
+            android:icon="@mipmap/creditreglement"
+            />
+
+        <item
+            android:id="@+id/menu_billetage"
+            android:icon="@mipmap/ic_billetage"
+            android:title="@string/billetage" />
+
+        <item
+            android:id="@+id/menu_parametre"
+            android:icon="@mipmap/parametres"
+            android:title="@string/param" />
+
+        <item
+            android:id="@+id/menu_op"
+            android:icon="@mipmap/listeop"
+            android:title="@string/menu_listeop" />
+
+        <item
+            android:id="@+id/menu_sync"
+            android:icon="@mipmap/synchronisation"
+            android:title="@string/menu_sync" />
+
+
+        <!--
+            <item
+                android:visible="false"
+                android:id="@+id/menu_stat"
+                android:icon="@mipmap/ic_stat"
+                android:title="@string/menu_stat" />
+            <item
+                android:id="@+id/menu_produit"
+                android:icon="@mipmap/ic_produit"
+                android:title="@string/menu_produit" />
+            <item
+                android:id="@+id/menu_partenaire"
+                android:icon="@mipmap/ic_client"
+                android:title="@string/menu_partenaire" />
+            <item
+                android:id="@+id/menu_commercial"
+                android:icon="@mipmap/ic_client"
+                android:title="@string/menu_commercial" />
+
+                !-->
+    </group>
+
+</menu>

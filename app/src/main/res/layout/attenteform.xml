@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/my_secondary_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:text="@string/client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/dernier"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#fff">
+
+
+            <EditText
+                android:id="@+id/client"
+                android:inputType="text"
+                android:text="COMPTANT"
+                android:maxLines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/partenaire"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/description"
+        android:gravity="top"
+        android:height="100dp"
+        android:padding="5dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:background="@color/state0"
+            android:textColor="@color/my_secondary_text"
+            android:text="@string/annuler"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:background="@color/state2"
+            android:textColor="@color/my_secondary_text"
+            android:text="@string/valid"
+            />
+    </LinearLayout>
+
+</LinearLayout>

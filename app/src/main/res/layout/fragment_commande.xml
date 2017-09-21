@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary_text"
+    tools:context="pv.projects.mediasoft.com.pventes.fragment.VenteplusFormFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/listeView"
+        android:layout_above="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/last"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="30"
+            android:paddingLeft="5dp"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:textColor="@color/my_primary_text"
+            android:layout_height="match_parent"
+            android:text="Total"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_weight="30"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:gravity="right"
+            android:layout_height="match_parent"
+            android:id="@+id/qt"
+            android:text="0"
+            android:textColor="@color/my_primary_text"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_weight="40"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:gravity="right"
+            android:layout_height="match_parent"
+            android:id="@+id/ttc"
+            android:text="0"
+            android:textColor="#c55"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/comptant"
+            android:textColor="@color/my_secondary_text"
+            android:text="@string/valider"
+            android:background="@color/state2"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

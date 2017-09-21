@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetBottom="0px" xmlns:android="http://schemas.android.com/apk/res/android">
+<selector>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners  android:topLeftRadius="0dip"
+                android:topRightRadius="0dip"
+                android:bottomLeftRadius="0dip"
+                android:bottomRightRadius="0dip" />
+            <gradient android:startColor="#FFFFFF" android:endColor="#FFFFFF" android:angle="270" />
+            <stroke android:width="2px" android:color="@color/my_selected" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners  android:topLeftRadius="0dip"
+                android:topRightRadius="0dip"
+                android:bottomLeftRadius="0dip"
+                android:bottomRightRadius="0dip"/>
+            <solid android:color="#FFFFFFFF" />
+            <stroke android:width="2px" android:color="@color/my_divider" />
+        </shape>
+    </item>
+</selector>
+</inset>

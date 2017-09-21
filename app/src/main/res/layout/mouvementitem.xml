@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/produitTV"
+            android:layout_weight="35"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="just "/>
+
+
+        <TextView
+            android:id="@+id/prixTv"
+            android:layout_weight="25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="just "/>
+
+
+        <TextView
+            android:id="@+id/quantiteTV"
+            android:layout_weight="15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="just "/>
+
+
+        <TextView
+            android:id="@+id/prixTotalTV"
+            android:layout_weight="24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/etat"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/state0"
+            android:layout_height="match_parent"
+            android:text=" "/>
+    </LinearLayout>
+
+</LinearLayout>

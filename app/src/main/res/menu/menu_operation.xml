@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="projet.mediasoft.com.caissemobile.activities.OperationActivity">
+    <item
+        android:id="@+id/action_imp"
+        android:orderInCategory="100"
+        android:title="@string/imp"
+        android:icon="@mipmap/ic_imp"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_recap"
+        android:orderInCategory="100"
+        android:title="@string/recap"
+        android:icon="@mipmap/ic_recap"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_interval"
+        android:orderInCategory="100"
+        android:title="@string/date"
+        android:icon="@drawable/ic_action_date"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_aide"
+        android:orderInCategory="100"
+        android:title="@string/aide"
+        android:icon="@mipmap/ic_aide"
+        app:showAsAction="always" />
+</menu>

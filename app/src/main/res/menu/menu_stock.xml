@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_sortie_stock"
+        android:icon="@mipmap/approvisionnement"
+        android:title="@string/menu_sortie_stock" />
+
+    <item
+        android:id="@+id/inventaire"
+        android:icon="@mipmap/listeop"
+        android:title="@string/menu_inventaire" />
+</menu>

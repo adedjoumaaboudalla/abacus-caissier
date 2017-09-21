@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:src="@mipmap/ic_produit"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/data"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/image"
+            android:layout_toLeftOf="@+id/delete"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/produitTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Libelle"/>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/prixTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Code"/>
+
+                <TextView
+                    android:id="@+id/quantiteTV"
+                    android:layout_toRightOf="@+id/codeTV"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/my_primary"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:text="Qte : 900"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/uniteTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Total : "/>
+
+                <TextView
+                    android:id="@+id/prixTotalTV"
+                    android:layout_toRightOf="@+id/uniteTV"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/my_primary"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:text="Total : 900"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:src="@mipmap/ic_annuler"
+            android:background="@color/gris_leger"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

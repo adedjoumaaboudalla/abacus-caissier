@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pv.projects.mediasoft.com.pventes">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INJECT_EVENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AccueilActivity"
+            android:label="@string/title_activity_accueil" />
+        <activity
+            android:name=".activities.ProduitListeActivity"
+            android:label="@string/ProduitListeActivity" />
+        <activity
+            android:name=".activities.ProduitActivity"
+            android:label="@string/title_activity_produit"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ProduitFormActivity"
+            android:label="@string/title_activity_produit_form"
+            android:parentActivityName=".activities.ProduitActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.ProduitActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ConnexionActivity"
+            android:label="@string/title_activity_caisse_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ParametreActivity"
+            android:label="@string/title_activity_parametre"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.OperationActivity"
+            android:label="@string/title_activity_operation"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DepenseFormActivity"
+            android:label="@string/title_activity_depense_form"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CommandeActivity"
+            android:label="@string/title_activity_commande"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PartenaireActivity"
+            android:label="@string/title_activity_client" />
+        <activity
+            android:name=".activities.PartenaireFormActivity"
+            android:label="@string/title_activity_partenaire_form"
+            android:parentActivityName=".activities.PartenaireActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.PartenaireActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CommercialActivity"
+            android:label="@string/title_activity_commercial" />
+        <activity
+            android:name=".activities.CommercialFormActivity"
+            android:label="@string/title_activity_commercial_form"
+            android:parentActivityName=".activities.CommercialFormActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.CommercialActivity" />
+        </activity>
+        <activity
+            android:name=".activities.StatistiqueActivity"
+            android:label="@string/title_activity_statistique"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MPChartActivity"
+            android:label="@string/title_activity_mpchart"
+            android:parentActivityName=".activities.StatistiqueActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.StatistiqueActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ReglageActivity"
+            android:label="@string/title_activity_reglage"
+            android:parentActivityName=".activities.ParametreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.ParametreActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AchatActivity"
+            android:label="@string/title_activity_achat"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AproposActivity"
+            android:label="@string/title_activity_apropos"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CreditPayementActivity"
+            android:label="@string/title_activity_credit_payement"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EtatActivity"
+            android:label="@string/title_activity_etat"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DiversFormActivity"
+            android:label="@string/title_activity_divers_form"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BuillitageActivity"
+            android:label="@string/title_activity_buillitage"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+
+        <provider
+            android:name=".services.OperationContentProvider"
+            android:authorities="pv.projects.mediasoft.com.pventes.Operation"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".services.AuthenticatorService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <service
+            android:name=".services.OperationSyncService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/operationsyncadapter" />
+        </service>
+
+        <service
+            android:name=".services.AttenteSyncService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/attentesyncadapter" />
+        </service>
+
+        <activity
+            android:name=".activities.VenteActivity"
+            android:label="@string/title_activity_vente"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CategorieProduitActivity"
+            android:label="@string/title_activity_categorie_produit" />
+        <activity
+            android:name=".activities.BanqueTransactionActiity"
+            android:label="@string/title_activity_caisse_banque_actiity"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CompteBanqueActivity"
+            android:label="@string/title_activity_compte_banque"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CompteBanqueFormActivity"
+            android:label="@string/title_activity_compte_banque_form" />
+        <activity
+            android:name=".activities.ScannerActivity"
+            android:label="@string/title_activity_scanner" />
+        <activity
+            android:name=".activities.DettePayementActivity"
+            android:label="@string/title_activity_creance"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ImmoFormActivity"
+            android:label="@string/title_activity_immo"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PlacementFormActivity"
+            android:label="@string/title_activity_placement_form"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EmpruntFormActivity"
+            android:label="@string/title_activity_dette_banque" />
+        <activity
+            android:name=".activities.EmpruntPayementActivity"
+            android:label="@string/title_activity_dette_payement"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pv.projects.mediasoft.com.pventes.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DeviseListActivity"
+            android:label="@string/title_activity_devise_list" />
+        <activity
+            android:name=".activities.DeviseActivity"
+            android:label="@string/title_activity_devise_list" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" />
+        <activity
+            android:name=".DeviceListActivity"
+            android:label="@string/title_activity_device_list" />
+        <activity
+            android:name=".activities.SortieStockActivity"
+            android:label="@string/title_activity_sortie_stock" />
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:label="@string/title_activity_web_view" />
+
+        <provider
+            android:name=".services.AttenteContentProvider"
+            android:authorities="pv.projects.mediasoft.com.pventes.attente"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>

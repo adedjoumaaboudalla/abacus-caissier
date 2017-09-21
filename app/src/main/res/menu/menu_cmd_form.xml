@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="projects.mediasoft.com.pointvente.activities.VenteFormActivity">
+
+
+    <item android:id="@+id/action_liste"
+        android:title="@string/listeop"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_recap"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_racourci"
+        android:title="@string/racourci"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_racourci"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_barcode"
+        android:title="@string/addbarcode"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_cam"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_add"
+        android:title="@string/ajout"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_plus"
+        app:showAsAction="always" />
+
+</menu>
