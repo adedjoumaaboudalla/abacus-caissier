@@ -2,6 +2,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="projet.mediasoft.com.caissemobile.activities.OperationActivity">
+
+    <item
+        android:id="@+id/menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        android:title="@string/menu_search"/>
+
     <item
         android:id="@+id/action_imp"
         android:orderInCategory="100"
@@ -30,5 +38,6 @@
         android:orderInCategory="100"
         android:title="@string/aide"
         android:icon="@mipmap/ic_aide"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
+
 </menu>

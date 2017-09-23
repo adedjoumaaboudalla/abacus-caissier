@@ -15,10 +15,12 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -95,6 +97,7 @@ public class OperationActivity extends AppCompatActivity implements OperationFra
     private double valeur = 0 ;
     private ArrayList<Operation> payements;
     private BluetoothService mService;
+    private SearchView mSearchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -496,6 +499,28 @@ public class OperationActivity extends AppCompatActivity implements OperationFra
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_operation, menu);
+
+        // SearchView
+        MenuItem itemSearch = menu.findItem(R.id.menu_search);
+        mSearchView = (SearchView) MenuItemCompat.getActionView(itemSearch);
+        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return true;
+            }
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                try {
+                    operationFragment7.filtrer(newText);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+                return false;
+            }
+        });
+
+        if (!preferences.getBoolean("stateonoff",false)) mSearchView.setVisibility(View.GONE); ;
+
         return true;
     }
 

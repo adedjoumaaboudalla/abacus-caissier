@@ -176,6 +176,13 @@ public class OperationDAO extends DAOBase implements Crud<Operation> {
     public int deleteOP(long id) {
         return  mDb.delete(OperationHelper.TABLE_NAME, OperationHelper.OPERATION_ID + " = ? ",new String[] { Long.toString(id)});
     }
+    public int deleteByIdExterne(long id) {
+        return  mDb.delete(OperationHelper.TABLE_NAME, OperationHelper.ID_EXTERNE + " = ? ",new String[] { Long.toString(id)});
+    }
+
+    public int deleteByToken(String token) {
+        return  mDb.delete(OperationHelper.TABLE_NAME, OperationHelper.TOKEN + " = ? ",new String[] {token});
+    }
 
     public int deleteAllAttente() {
         return  mDb.delete(OperationHelper.TABLE_NAME, OperationHelper.ATTENTE + " = 1 ",null);
@@ -328,6 +335,63 @@ public class OperationDAO extends DAOBase implements Crud<Operation> {
         res.close();
         return operation ;
     }
+
+
+
+    public Operation getOneToken(String token) {
+        Operation operation = null ;
+
+        Log.e("SQL MOUV","select * from "+ OperationHelper.TABLE_NAME +" where "  + OperationHelper.TOKEN  +  "='"+token+"'") ;
+        Cursor res =  mDb.rawQuery( "select * from "+ OperationHelper.TABLE_NAME +" where "  + OperationHelper.TOKEN  +  "='"+token+"'", null );
+        if (res.moveToFirst()){
+            operation = new Operation();
+            operation.setId(res.getLong(res.getColumnIndex(OperationHelper.TABLE_KEY)));
+            operation.setId_externe(res.getInt(res.getColumnIndex(OperationHelper.ID_EXTERNE)));
+            operation.setMontant(res.getDouble(res.getColumnIndex(OperationHelper.MONTANT)));
+            operation.setNbreproduit(res.getDouble(res.getColumnIndex(OperationHelper.NBREPRODUIT)));
+            operation.setRemise(res.getDouble(res.getColumnIndex(OperationHelper.REMISE)));
+            operation.setCaisse_id(res.getLong(res.getColumnIndex(OperationHelper.CAISSE_ID)));
+            operation.setPartenaire_id(res.getLong(res.getColumnIndex(OperationHelper.PARTENAIRE_ID)));
+            operation.setCommercialid(res.getLong(res.getColumnIndex(OperationHelper.COMMERCIAL_ID)));
+            operation.setOperation_id(res.getLong(res.getColumnIndex(OperationHelper.OPERATION_ID)));
+            operation.setTypeOperation_id(res.getString(res.getColumnIndex(OperationHelper.TYPEOPERATION_ID)));
+            operation.setEtat(res.getInt(res.getColumnIndex(OperationHelper.ETAT)));
+            operation.setAnnuler(res.getInt(res.getColumnIndex(OperationHelper.ANNULER)));
+            operation.setEntree(res.getInt(res.getColumnIndex(OperationHelper.ENTREE)));
+            operation.setAttente(res.getInt(res.getColumnIndex(OperationHelper.ATTENTE)));
+            operation.setRecu(res.getDouble(res.getColumnIndex(OperationHelper.RECU)));
+            operation.setClient(res.getString(res.getColumnIndex(OperationHelper.CLIENT)));
+            operation.setNumcheque(res.getString(res.getColumnIndex(OperationHelper.NUMCHEQUE)));
+            operation.setModepayement(res.getString(res.getColumnIndex(OperationHelper.MODEPAYEMENT)));
+            operation.setDescription(res.getString(res.getColumnIndex(OperationHelper.DESCRIPTION)));
+            operation.setToken(res.getString(res.getColumnIndex(OperationHelper.TOKEN)));
+            operation.setPayer(res.getInt(res.getColumnIndex(OperationHelper.PAYER)));
+            try {
+                operation.setDateecheance(DAOBase.formatter.parse(res.getString(res.getColumnIndex(OperationHelper.DATE_ECHEANCE))));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            try {
+                operation.setCreated_at(DAOBase.formatter.parse(res.getString(res.getColumnIndex(OperationHelper.CREATED_AT))));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            try {
+                operation.setDateoperation(DAOBase.formatter.parse(res.getString(res.getColumnIndex(OperationHelper.DATE_OPERATION))));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            try {
+                operation.setDateannulation(DAOBase.formatter.parse(res.getString(res.getColumnIndex(OperationHelper.DATE_ANNULATION))));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        res.close();
+        return operation ;
+    }
+
+
 
     public Operation getOneExterne(long id) {
         Operation operation = null ;
