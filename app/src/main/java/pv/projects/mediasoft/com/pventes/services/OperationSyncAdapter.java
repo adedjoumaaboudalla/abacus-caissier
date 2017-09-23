@@ -138,9 +138,11 @@ public class OperationSyncAdapter extends AbstractThreadedSyncAdapter {
         // Vérifier si la caisse est toujours active
         synchronisationCaisse();
 
+        /*
         if (preferences.getBoolean("stateonoff",false)){
             synchronisationAttente();
         }
+        */
 
         etape = 1 ;
         startSync();
@@ -794,7 +796,7 @@ public class OperationSyncAdapter extends AbstractThreadedSyncAdapter {
     }
 
 
-
+/*
     private void synchronisationAttente() {
 
         FormBody.Builder formBuilder = new FormBody.Builder() ;
@@ -926,5 +928,5 @@ public class OperationSyncAdapter extends AbstractThreadedSyncAdapter {
             e.printStackTrace();
         }
     }
-
+*/
 }

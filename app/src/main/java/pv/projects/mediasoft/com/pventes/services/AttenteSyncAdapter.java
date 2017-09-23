@@ -163,7 +163,7 @@ public class AttenteSyncAdapter extends AbstractThreadedSyncAdapter {
                     operation.setId_externe(operationObj.getLong("id"));
                     operation.setId(operationObj.getLong("id"));
                     operation.setAnnuler(operationObj.getInt("annuler"));
-                    operation.setAttente(0);
+                    operation.setAttente(1);
                     operation.setToken(operationObj.getString("token"));
                     operation.setCaisse(operationObj.getLong("caisse_id"));
                     if (!operationObj.getString("attente").equals("null"))operation.setAttente(operationObj.getInt("attente"));
@@ -181,7 +181,7 @@ public class AttenteSyncAdapter extends AbstractThreadedSyncAdapter {
                     operation.setModepayement(operationObj.getString("modepayement"));
                     operation.setRecu(operationObj.getDouble("recu"));
                     operation.setRemise(operationObj.getDouble("remise"));
-                    operation.setEtat(1);
+                    operation.setEtat(2);
                     try {
                         operation.setDateoperation(DAOBase.formatter.parse(operationObj.getString("created_at")));
                         operation.setCreated_at(DAOBase.formatter.parse(operationObj.getString("created_at")));
@@ -207,7 +207,7 @@ public class AttenteSyncAdapter extends AbstractThreadedSyncAdapter {
                     if (operation.getTypeOperation_id().equals(OperationDAO.CMDFRNSS)) text = context.getString(R.string.cmdfr) +  " : "  + Utiles.formatMtn(operation.getMontant()) ;
 
                     //inboxStyle.addLine(text);
-                    if (operationDAO.getOne(operation.getId_externe())!=null) operationDAO.delete(operation.getId_externe()) ;
+                    if (operationDAO.getOneExterne(operation.getId_externe())!=null) operationDAO.delete(operation.getId_externe()) ;
                     operationDAO.add(operation) ;
 
                     mouvementDAO.deletePV(operation.getId_externe()) ;
@@ -223,7 +223,7 @@ public class AttenteSyncAdapter extends AbstractThreadedSyncAdapter {
                 for (int i = 0; i < size; i++) {
                     mouvementObj = mouvementArr.getJSONObject(i);
                     mouvement = new Mouvement();
-                    mouvement.setEtat(1);
+                    mouvement.setEtat(2);
                     mouvement.setId(mouvementObj.getLong("id"));
                     mouvement.setEntree(mouvementObj.getInt("entree"));
                     mouvement.setPrixA(mouvementObj.getDouble("prix_achat"));
